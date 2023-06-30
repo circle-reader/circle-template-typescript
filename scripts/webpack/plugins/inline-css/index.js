@@ -12,7 +12,7 @@ class InlineCss {
         (_, callback) => {
           const { assets } = compilation;
           Object.keys(assets).forEach((key) => {
-            if (!key.startsWith('widget') || !key.endsWith('.js')) {
+            if (!key.endsWith('.js')) {
               return;
             }
             const value = assets[key];
@@ -23,8 +23,7 @@ class InlineCss {
             if (!/\window\.inlineStyle/.test(plugin)) {
               return;
             }
-            const name = key.replace(/widget\/(.*?)\.js/, '$1');
-            const styleKey = `widget/${name}.css`;
+            const styleKey = key.replace(/\.js/, '.css');
             if (!assets[styleKey]) {
               return;
             }

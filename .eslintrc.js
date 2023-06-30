@@ -14,22 +14,10 @@ module.exports = {
     },
     'import/resolver': {
       alias: {
-        map: [
-          ['@', './src/'],
-          ['@cache', './.cache/'],
-          ['@clever', './src/core/clever/'],
-          ['@compass', './src/core/compass/'],
-          ['@screenshot', './src/core/shot/'],
-        ],
+        map: [['@', './src/']],
         extensions: ['.ts', 'tsx', '.js', '.jsx', '.json'],
       },
     },
-  },
-  globals: {
-    App: true,
-    DEBUG: true,
-    CRX_V3: true,
-    chrome: true,
   },
   env: {
     browser: true,
