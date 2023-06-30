@@ -1,6 +1,5 @@
 const path = require('path');
 const Webpackbar = require('webpackbar');
-// const HotReload = require('./plugin/hot-reload');
 const EslintPlugin = require('eslint-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -14,14 +13,15 @@ module.exports = {
     'react-dom': 'ReactDOM',
     classnames: 'classnames',
   },
+  entry: path.join(__dirname, `../src/__ignore_this_file.ts`),
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, '../../dist'),
+    path: path.resolve(__dirname, '../dist'),
     publicPath: '/',
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '../../src'),
+      '@': path.resolve(__dirname, '../src'),
     },
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
