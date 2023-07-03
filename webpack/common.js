@@ -3,15 +3,17 @@ const Webpackbar = require('webpackbar');
 const EslintPlugin = require('eslint-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const InlineCss = require('./plugins/inline-css');
+const InlineStyle = require('./inline-style');
 
 module.exports = {
   target: 'web',
+  devtool: false,
   externals: {
     antd: 'antd',
     react: 'React',
     'react-dom': 'ReactDOM',
     classnames: 'classnames',
+    '@ant-design/cssinjs': 'AntDesignCssinjs',
   },
   entry: path.join(__dirname, `../src/__ignore_this_file.ts`),
   output: {
@@ -84,7 +86,7 @@ module.exports = {
   },
   plugins: [
     new Webpackbar(),
-    new InlineCss(),
+    new InlineStyle(),
     new EslintPlugin({
       cache: true,
     }),

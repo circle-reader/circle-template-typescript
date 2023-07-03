@@ -4,7 +4,7 @@
     "outDir": "dist",
     "target": "esnext",
     "lib": ["es2017", "dom"],
-    "sourceMap": true,
+    "sourceMap": false,
     "jsx": "preserve",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,

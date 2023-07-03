@@ -1785,12 +1785,14 @@ ci-info@^3.2.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.8.0.tgz#81408265a5380c929f0bc665d62256628ce9ef91"
   integrity sha512-eXTggHWSooYhq49F2opQhuHWgzucfF2YgODK4e1566GQs5BIfP30B0oenwBJHfWxAs2fyPB1s7Mg949zLf61Yw==
 
-circle-wf@^1.0.0:
+"circle-cts@file:../circle-cts":
+  version "1.0.0"
+
+"circle-wf@file:../circle-wf":
   version "1.0.3"
-  resolved "https://registry.yarnpkg.com/circle-wf/-/circle-wf-1.0.3.tgz#828b2feb5ec5325afd7b09d51ef4c18959075f72"
-  integrity sha512-f5zWpHnF1oCYJF+zHPdwt9gRWMk1QM/Ti5rvvIzQ09hWOPTDju3kbl18wfKmgV40Uhdu4OOtsH+mNtRkBxwAsg==
   dependencies:
     axios "^1.4.0"
+    chokidar "^3.5.3"
     commander "^11.0.0"
     consola "^3.2.2"
     cross-spawn "^7.0.3"
@@ -1802,6 +1804,7 @@ circle-wf@^1.0.0:
     react-dev-utils "^12.0.1"
     shelljs "^0.8.5"
     webpack "^5.88.1"
+    ws "^8.13.0"
 
 classnames@2.x, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5, classnames@^2.2.6, classnames@^2.3.1, classnames@^2.3.2:
   version "2.3.2"
@@ -7024,7 +7027,7 @@ write-file-atomic@^5.0.1:
     imurmurhash "^0.1.4"
     signal-exit "^4.0.1"
 
-ws@^8.12.1:
+ws@^8.12.1, ws@^8.13.0:
   version "8.13.0"
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.13.0.tgz#9a9fb92f93cf41512a0735c8f4dd09b8a1211cd0"
   integrity sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==
