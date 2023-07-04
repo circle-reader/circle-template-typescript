@@ -2,10 +2,9 @@
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist",
-    "target": "esnext",
-    "lib": ["es2017", "dom"],
+    "target": "ES2017",
     "sourceMap": false,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "strictNullChecks": true,

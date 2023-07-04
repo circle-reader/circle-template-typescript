@@ -15,7 +15,7 @@ module.exports = {
     classnames: 'classnames',
     '@ant-design/cssinjs': 'AntDesignCssinjs',
   },
-  entry: path.join(__dirname, `../src/__ignore_this_file.ts`),
+  entry: path.join(__dirname, `../src/.circle/autoConfig/entry.ts`),
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, '../dist'),
@@ -30,33 +30,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              cacheDirectory: true,
-            },
-          },
-        ],
-      },
-      {
-        test: /\.ts$/,
+        test: /\.(tsx|ts)$/,
         loader: 'ts-loader',
-        exclude: /node_modules/,
-      },
-      {
-        test: /\.tsx$/,
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              cacheDirectory: true,
-            },
-          },
-          'ts-loader',
-        ],
         exclude: /node_modules/,
       },
       {
