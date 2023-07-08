@@ -6,16 +6,16 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const InlineStyle = require('./inline-style');
 
 module.exports = {
-  target: 'web',
   devtool: false,
+  target: ['web', 'es5'],
   externals: {
-    antd: 'antd',
+    antd: 'Antd',
     react: 'React',
-    'react-dom': 'ReactDOM',
-    classnames: 'classnames',
-    '@ant-design/cssinjs': 'AntDesignCssinjs',
+    classnames: 'classNames',
+    'react-dom/client': 'ReactDOM',
+    'react/jsx-runtime': 'ReactJsxRuntime',
+    '@ant-design/cssinjs': 'AntdCssInJs',
   },
-  entry: path.join(__dirname, `../src/.circle/autoConfig/entry.ts`),
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, '../dist'),
