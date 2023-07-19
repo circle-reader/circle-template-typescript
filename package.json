@@ -1,6 +1,6 @@
 {
   "name": "circle-template-typescript",
-  "version": "1.0.3",
+  "version": "1.0.3-4",
   "license": "MIT",
   "runAt": "render_done",
   "author": "Ranhe <wenguang.fe@gmail.com> (https://circlereader.com/)",
@@ -9,11 +9,6 @@
     "build": "circle build",
     "prepare": "husky install"
   },
-  "files": [
-    "dist",
-    "package.json",
-    "README.md"
-  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -21,10 +16,10 @@
   },
   "dependencies": {
     "antd": "^5.7.0",
-    "circle-cts": "^1.0.3-3",
     "classnames": "^2.3.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "circle-ihk": "^1.0.0-3"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
