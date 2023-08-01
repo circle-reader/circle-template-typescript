@@ -5,7 +5,7 @@
     "target": "ES5",
     "sourceMap": false,
     "jsx": "react-jsx",
-    "lib": ["ES2015", "DOM"],
+    "lib": ["ESNext", "DOM"],
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "strictNullChecks": true,

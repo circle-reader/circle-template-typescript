@@ -11,10 +11,12 @@ module.exports = {
   externals: {
     antd: 'Antd',
     react: 'React',
+    dayjs: 'dayjs',
     classnames: 'classNames',
-    'react-dom/client': 'ReactDOM',
+    '@ant-design/icons-svg': 'AntDesignSvg',
+    '@ant-design/colors': 'AntDesignColors',
     'react/jsx-runtime': 'ReactJsxRuntime',
-    '@ant-design/cssinjs': 'AntdCssInJs',
+    '@ant-design/icons': 'AntDesignIcons',
   },
   output: {
     filename: '[name].js',

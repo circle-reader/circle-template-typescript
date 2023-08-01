@@ -1,6 +1,6 @@
 {
   "name": "circle-template-typescript",
-  "version": "1.0.3-4",
+  "version": "1.0.3-6",
   "license": "MIT",
   "runAt": "render_done",
   "author": "Ranhe <wenguang.fe@gmail.com> (https://circlereader.com/)",
@@ -15,11 +15,12 @@
     }
   },
   "dependencies": {
-    "antd": "^5.7.0",
-    "classnames": "^2.3.2",
+    "antd": "^5.7.3",
+    "@ant-design/icons": "^5.1.0",
+    "classnames": "^2.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "circle-ihk": "^1.0.0-3"
+    "circle-ihk": "^1.0.0-5"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",

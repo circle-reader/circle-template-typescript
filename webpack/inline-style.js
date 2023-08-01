@@ -23,7 +23,7 @@ class InlineCss {
             if (!/\window\.inlineStyle/.test(plugin)) {
               return;
             }
-            const styleKey = key.replace(/\.js/, '.css');
+            const styleKey = 'main.css';
             if (!assets[styleKey]) {
               assets[key] = new RawSource(
                 plugin.replace('window.inlineStyle', '``')
